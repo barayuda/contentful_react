@@ -80,10 +80,10 @@ class Header extends React.Component {
             </div> */}
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="https://github.com/barayuda">
+            <a className="navbar-item" href="https://github.com/barayuda/contentful_react" target="_blank" title="Source Code" rel="noopener noreferrer">
               <span className="icon">
                 <i className="fab fa-lg fa-github"></i>
-              </span>
+              </span> 
             </a>
             {/* <a className="navbar-item" href="https://twitter.com/barayuda">
               <span className="icon has-text-info" style={{ color: '#0084FF' }}>
