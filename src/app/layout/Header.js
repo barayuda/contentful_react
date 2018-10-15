@@ -56,7 +56,7 @@ class Header extends React.Component {
               <span className="icon has-text-primary" style={{ marginRight: 5 }}>
                 <i className="fas fa-code"></i>
               </span>
-              Code Blog
+              Contentful Blog
             </NavLink>
             {/* <a className="navbar-item">
               <span className="icon" style={{ marginRight: 5 }}>

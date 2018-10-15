@@ -1,6 +1,8 @@
 import React from 'react'
 import * as contentful from 'contentful'
 import BlogItem from './blog/BlogItem'
+import PageHeader from '../components/PageHeader'
+import PageContent from '../components/PageContent'
 
 class Blog extends React.Component {
   state = {
@@ -22,11 +24,14 @@ class Blog extends React.Component {
   render () {
     return (
       <div>
-        <p>This is the Blog Page</p>
-        <br/>
-        { this.state.posts.map(({fields}, i) =>
-          <BlogItem key={i} {...fields} />
-        )}
+        <PageHeader color="is-info" title="Contentful Blog">
+          This <strong>blog</strong> is a chronological mix of random posts on my perception.
+        </PageHeader>
+        <PageContent>
+          { this.state.posts.map(({fields}, i) =>
+            <BlogItem key={i} {...fields} />
+          )}
+        </PageContent>
       </div>
     )
   }
