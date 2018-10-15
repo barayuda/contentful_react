@@ -8,7 +8,7 @@ const BlogItem = (props) => (
       <BlogNav date={props.date} to={{
         pathname: `/blog/${props.path}`,
         state: { props }
-      }} />
+      }} label="Read More"/>
     </BlogContent>
   </div>
 )
